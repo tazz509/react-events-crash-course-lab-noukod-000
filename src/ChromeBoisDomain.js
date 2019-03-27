@@ -12,7 +12,7 @@ export default class ChromeBoisDomain extends Component {
 
   keyPressed = (event) => {
     if(event.key == 'a'){
-      resize('+'); //was having error b/c not in quotes!
+      resize('+');
     } else if (event.key == 's') {
       resize('-');
     }
@@ -23,7 +23,7 @@ export default class ChromeBoisDomain extends Component {
     return (
       <canvas
         onClick={toggleCycling()}
-        onKeyPress={this.keyPressed} //before had parentheses which was causing error
+        onKeyPress={this.keyPressed} 
         onMouseMove={this.handleMouseMove}
         width='900'
         height='600'
