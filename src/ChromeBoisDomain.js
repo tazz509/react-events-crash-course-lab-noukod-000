@@ -13,7 +13,7 @@ export default class ChromeBoisDomain extends Component {
   keyPressed = (event) => {
     if(event.key == 'a'){
       resize('+'); 
-    } else if (event.key == 's') {
+    } else (event.key == 's') {
       resize('-');
     }
   }
