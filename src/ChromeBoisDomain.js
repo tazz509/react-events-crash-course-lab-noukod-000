@@ -12,7 +12,7 @@ export default class ChromeBoisDomain extends Component {
 
   keyPressed = (event) => {
     if(event.key == 'a'){
-      resize('+'); 
+      resize('+');
     } else (event.key == 's') {
       resize('-');
     }
@@ -23,7 +23,7 @@ export default class ChromeBoisDomain extends Component {
     return (
       <canvas
         onClick={toggleCycling()}
-        onKeyPress={this.keyPressed} 
+        onKeyPress={this.keyPressed}
         onMouseMove={this.handleMouseMove}
         width='900'
         height='600'
